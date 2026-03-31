@@ -8,6 +8,7 @@
  */
 import { Agent } from '@mastra/core/agent';
 import { Memory } from '@mastra/memory';
+import { fastembed } from '@mastra/fastembed';
 import { z } from 'zod';
 import { store, vectorStore } from '../storage.js';
 import { lookupClientTool, getCurrentTimeTool, createTaskTool } from '../tools/project-tools.js';
@@ -34,6 +35,7 @@ const userProfileSchema = z.object({
 const memory = new Memory({
   storage: store,
   vector: vectorStore,
+  embedder: fastembed,
   options: {
     // 1. Message History - keep last 40 messages in context
     lastMessages: 40,
