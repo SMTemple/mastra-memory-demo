@@ -1,0 +1,26 @@
+{
+  "name": "mastra-memory-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "demo": "tsx src/demo-scripted.ts",
+    "chat": "tsx src/demo-interactive.ts",
+    "chat:new": "tsx src/demo-interactive.ts --new-thread",
+    "build": "tsc"
+  },
+  "keywords": ["mastra", "ai-agents", "memory", "persistent-memory"],
+  "author": "SMTemple",
+  "license": "MIT",
+  "description": "Mastra.ai persistent memory demo - working memory, semantic recall, and message history for AI agents",
+  "dependencies": {
+    "@mastra/core": "^0.24.9",
+    "@mastra/libsql": "^0.16.4",
+    "@mastra/memory": "^0.15.13",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
