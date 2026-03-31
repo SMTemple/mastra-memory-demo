@@ -6,6 +6,7 @@
     "demo": "tsx src/demo-scripted.ts",
     "chat": "tsx src/demo-interactive.ts",
     "chat:new": "tsx src/demo-interactive.ts --new-thread",
+    "test": "tsx src/demo-tests.ts",
     "build": "tsc"
   },
   "keywords": [
